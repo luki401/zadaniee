@@ -1,0 +1,12 @@
+<form (ngSubmit) = "submit()">
+<div>
+    <label for="name">Nazwa</label>
+    <input type="text" name="name" id="name" [(ngModel)]="user.name">
+</div>
+<div>
+    <label for="date">Data</label>
+    <input type="text" name="date" id="date" [(ngModel)]="user.birth">
+</div>
+
+<button type="submit">Dodaj</button>
+</form>

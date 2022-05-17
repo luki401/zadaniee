@@ -1,0 +1,31 @@
+<div>
+<table>
+    <thead>
+    <tr>
+        <th>ID</th>
+        <th>Imie</th>
+        <th>Data urodzenia</th>
+    </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let user of users">
+            <td>
+                {{user.userId}}
+            </td>
+            <td>
+                {{user.name}}
+            </td>
+            <td>
+                {{user.birth}}
+            </td>
+            <td>
+                <button (click)="delete(user.userId)">
+                    Usuń
+                </button>
+            </td>
+        </tr>
+    </tbody>
+</table>
+</div>
+
+
